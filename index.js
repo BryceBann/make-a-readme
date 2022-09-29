@@ -92,7 +92,7 @@ const questions = [
         type: 'checkbox',
         name: 'licensing',
         message: 'choose a license for your project',
-        choices: ['MIT', 'None', 'lolWtest'],
+        choices: ['MIT', 'ISC', 'lolWtest'],
         validate: licensingInput => {
             if(licensingInput){
                 return true;
