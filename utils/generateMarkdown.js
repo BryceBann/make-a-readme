@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
 
-// TODO: Create a function that returns the license link
+  // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
 
@@ -10,7 +10,7 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// fuction for read me age layout and take user input and add to the page
 function generateMarkdown(data) {
   return `# ${data.title}
   
