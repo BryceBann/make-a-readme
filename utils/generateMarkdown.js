@@ -15,7 +15,8 @@ function renderLicenseBadge(license) {
       case 'GNU' :
       licenseType =  "GNU-GREEN.svg"
       break;
-  }
+
+    }
   
   let badge = `https://img.shields.io/badge/license-${licenseType}`;  
   return badge; 
@@ -23,7 +24,27 @@ function renderLicenseBadge(license) {
 
   // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+
+  var licenseLink = ""
+
+  switch(license) {
+    case 'MIT' :
+      licenseLink = `https://opensource.org/licenses/MIT`
+    break ;
+
+    case 'ISC' :
+      licenseLink = `https://opensource.org/licenses/ISC`
+    break;
+
+    case 'GNU' : 
+    licenseLink = `https://www.gnu.org/licenses/gpl-3.0.en.html`
+    break;
+  }
+
+  let link = licenseLink
+  return link;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -34,6 +55,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
   
   ## Liscensing:
+  ${renderLicenseBadge()}
 
   ## Table of contents
   - [Description](#descrition)
@@ -61,6 +83,7 @@ function generateMarkdown(data) {
 
   ## Liscense:
   ${data.liscense}
+  ${renderLicenseLink()}
 
   ##Additional Info:
   - Github: ${data.github}(https://github.com/${data.github})
