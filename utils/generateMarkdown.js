@@ -5,20 +5,20 @@ function renderLicenseBadge(license) {
 
   switch(license) {
     case 'MIT' :
-      licenseType =  "MIT-BLUE.svg"
+      licenseType =  "MIT"
       break;
 
       case 'ISC' :
-      licenseType =  "ISC-RED.svg"
+      licenseType =  "ISC"
       break;
 
       case 'GNU' :
-      licenseType =  "GNU-GREEN.svg"
+      licenseType =  "GNU"
       break;
 
     }
   
-  let badge = `https://img.shields.io/badge/license-${licenseType}`;  
+  let badge = `[![license](https://img.shields.io/badge/license-${licenseType}-blue)](https://shields.io)`;  
   return badge; 
 }
 
@@ -41,9 +41,8 @@ function renderLicenseLink(license) {
     licenseLink = `https://www.gnu.org/licenses/gpl-3.0.en.html`
     break;
   }
-
-  let link = licenseLink
-  return link;
+  
+  return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -56,6 +55,7 @@ function generateMarkdown(data) {
   
   ## Liscensing:
   ${renderLicenseBadge()}
+
 
   ## Table of contents
   - [Description](#descrition)
@@ -82,8 +82,8 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## Liscense:
-  ${data.licensing}
-  ${renderLicenseLink()}
+  ${data.license}
+  ${renderLicenseLink().licenseLink}
 
   ##Additional Info:
   - Github: ${data.github}(https://github.com/${data.github})

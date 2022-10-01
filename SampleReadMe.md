@@ -1,7 +1,8 @@
 # df
   
   ## Liscensing:
-  https://img.shields.io/badge/license-
+  [![license](https://img.shields.io/badge/license--blue)](https://shields.io)
+
 
   ## Table of contents
   - [Description](#descrition)
@@ -29,7 +30,7 @@
 
   ## Liscense:
   MIT
-  
+  undefined
 
   ##Additional Info:
   - Github: df(https://github.com/df)
