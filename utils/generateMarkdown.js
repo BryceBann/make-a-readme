@@ -82,7 +82,7 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## Liscense:
-  ${data.liscense}
+  ${data.licensing}
   ${renderLicenseLink()}
 
   ##Additional Info:
