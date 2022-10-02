@@ -23,7 +23,7 @@ const renderLicenseBadge = (license) => {
     }
   
   let badge = `https://img.shields.io/badge/license-${licenseType}`;  
-  return badge; 
+  return badge
 }
 
   // TODO: Create a function that returns the license link
@@ -50,7 +50,7 @@ const renderLicenseLink = (license) => {
       break;
   }
   let link = licenseLink
-  return link;
+  return link
 }
 
 // TODO: Create a function that returns the license section of README
@@ -68,10 +68,6 @@ const generateMarkdown = (data) =>{
   return `
   # ${data.title}
   [![License](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
-
-  ## Liscensing:
-  ${renderLicenseBadge()}
-
 
   ## Table of contents
   - [Description](#descrition)

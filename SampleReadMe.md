@@ -2,10 +2,6 @@
   # df
   [![License](https://img.shields.io/badge/license-)]()
 
-  ## Liscensing:
-  https://img.shields.io/badge/license-
-
-
   ## Table of contents
   - [Description](#descrition)
   - [Installation](#installation)
@@ -22,10 +18,10 @@
   df
 
   ## Usage:
-  dfd
+  df
 
   ## Contribution:
-  fdf
+  df
 
   ## Testing:
   df
