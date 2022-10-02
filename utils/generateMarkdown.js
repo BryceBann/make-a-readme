@@ -1,30 +1,34 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+const renderLicenseBadge = (license) => {
   var licenseType = ""
 
   switch(license) {
     case 'MIT' :
-      licenseType =  "MIT"
+      licenseType =  "MIT-blue.svg"
       break;
 
       case 'ISC' :
-      licenseType =  "ISC"
+      licenseType =  "ISC-yellow.svg"
       break;
 
       case 'GNU' :
-      licenseType =  "GNU"
+      licenseType =  "GNU-yellow.svg"
       break;
+
+      case 'noce' :
+        licenseType = "none-res.svg"
+        break;
 
     }
   
-  let badge = `[![license](https://img.shields.io/badge/license-${licenseType}-blue)](https://shields.io)`;  
+  let badge = `https://img.shields.io/badge/license-${licenseType}`;  
   return badge; 
 }
 
   // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+const renderLicenseLink = (license) => {
 
   var licenseLink = ""
 
@@ -40,19 +44,30 @@ function renderLicenseLink(license) {
     case 'GNU' : 
     licenseLink = `https://www.gnu.org/licenses/gpl-3.0.en.html`
     break;
+
+    case 'None':
+      licenseLink = ''
+      break;
   }
-  
-  return licenseLink;
+  let link = licenseLink
+  return link;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+const renderLicenseSection = (license) => {
+  if(license == 'none') {
+    return ''
+  }else{
+    return `The project is covered under the ${license}. Click on the badge for more information`
+  }
+}
 
 // fuction for read me page layout and take user input and add to the page
 function generateMarkdown(data) {
   return `# ${data.title}
-  
+  [![License](${renderLicenseBadge(data.licenses)})](${renderLicenseLink(data.licenses)})
+
   ## Liscensing:
   ${renderLicenseBadge()}
 
@@ -83,7 +98,8 @@ function generateMarkdown(data) {
 
   ## Liscense:
   ${data.license}
-  ${renderLicenseLink().licenseLink}
+  [![License](${renderLicenseBadge(data.licenses)})](${renderLicenseLink(data.licenses)})    
+  ${renderLicenseSection(data.licenses)}  
 
   ##Additional Info:
   - Github: ${data.github}(https://github.com/${data.github})
