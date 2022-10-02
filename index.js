@@ -92,7 +92,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'choose a license for your project',
-        choices: ['MIT', 'ISC', 'GNU'],
+        choices: ['MIT', 'ISC', 'GNU', 'none'],
         validate: licensingInput => {
             if(licensingInput){
                 return true;
@@ -126,22 +126,37 @@ const questions = [
 ];
 
 // function to make the readme file 
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
-        if(err)
-        throw err;
-        console.log('success the information has added to the the readMe!')
-    });
-};
+const writeToFile = (data) => {
+    fs.writeFile('sampleReadMe.md', data, (err) => {
+        if (err){
+            return console.log("Error ocurred")
+        }else{
+            console.log('please check the new readme file')
+        }
+    })
+}
 
 // function to take user input and write it to the readme file
-function init() {
-    inquirer.prompt(questions)
-    .then(function (userInput){
-        console.log(userInput)
-        writeToFile('SampleReadMe.md', generateMarkdown(userInput));
-    });
-};
+// function init() {
+//     inquirer.prompt(questions)
+//     .then(function (userInput){
+//         console.log(userInput)
+//         writeToFile('SampleReadMe.md', generateMarkdown(userInput));
+//     });
+// };
 
 // Function call to initialize app
-init();
+const init = () => {
+    return inquirer.prompt(questions)
+}
+
+init()
+.then((userInput) => {
+    return generateMarkdown(userInput)
+})
+.then((mdInfo) => {
+    return writeToFile(mdInfo)
+})
+.catch((err) => {
+    console.log(err)
+})

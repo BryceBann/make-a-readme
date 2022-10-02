@@ -32,7 +32,7 @@
   ## Liscense:
   MIT
   [![License](https://img.shields.io/badge/license-)]()    
-  The project is covered under the undefined. Click on the badge for more information  
+  The project is covered under the MIT. Click on the badge for more information  
 
   ##Additional Info:
   - Github: df(https://github.com/df)

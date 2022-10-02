@@ -98,8 +98,8 @@ function generateMarkdown(data) {
 
   ## Liscense:
   ${data.license}
-  [![License](${renderLicenseBadge(data.licenses)})](${renderLicenseLink(data.licenses)})    
-  ${renderLicenseSection(data.licenses)}  
+  [![License](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})    
+  ${renderLicenseSection(data.license)}  
 
   ##Additional Info:
   - Github: ${data.github}(https://github.com/${data.github})
