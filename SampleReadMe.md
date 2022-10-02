@@ -1,5 +1,5 @@
 
-  # df
+  # er
   [![License](https://img.shields.io/badge/license-)]()
 
   ## Table of contents
@@ -12,24 +12,24 @@
   - [Additional Info](#additional-info)
 
   ## Description:
-  df
+  er
 
   ## Installation:
-  df
+  er
 
   ## Usage:
-  df
+  erer
 
   ## Contribution:
-  df
+  er
 
   ## Testing:
-  df
+  er
 
   ## Liscense:
   [![License](https://img.shields.io/badge/license-)]()    
-  The project is covered under the GNU. Click on the badge for more information  
+  The project is covered under the MIT. Click on the badge for more information  
 
   ##Additional Info:
-  - Github: fd(https://github.com/fd)
-  - Email: df
+  - Github: er(https://github.com/er)
+  - Email: er

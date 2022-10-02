@@ -1,7 +1,7 @@
 //needed packages to complete 
 const inquirer = require('inquirer')
 const fs = require('fs')
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown')
 //prompting the questions to be filled to generate the read me 
 const questions = [
     {
@@ -93,8 +93,8 @@ const questions = [
         name: 'license',
         message: 'choose a license for your project',
         choices: ['MIT', 'ISC', 'GNU', 'none'],
-        validate: licensingInput => {
-            if(licensingInput){
+        validate: license=> {
+            if(license){
                 return true;
             }else{
                 console.log('You need a license to contiune');
@@ -122,7 +122,7 @@ const questions = [
         name: 'email',
         message: 'would you like to add your email',
         
-    },
+    }
 ];
 
 // function to make the readme file 
