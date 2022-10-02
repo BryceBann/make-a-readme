@@ -5,19 +5,19 @@ const renderLicenseBadge = (license) => {
 
   switch(license) {
     case 'MIT' :
-      licenseType =  "MIT-blue.svg"
+      licenseType =  'MIT-blue.svg'
       break;
 
       case 'ISC' :
-      licenseType =  "ISC-yellow.svg"
+      licenseType =  'ISC-yellow.svg'
       break;
 
       case 'GNU' :
-      licenseType =  "GNU-yellow.svg"
+      licenseType =  'GNU-yellow.svg'
       break;
 
       case 'noce' :
-        licenseType = "none-res.svg"
+        licenseType = 'none-res.svg'
         break;
 
     }
@@ -34,15 +34,15 @@ const renderLicenseLink = (license) => {
 
   switch(license) {
     case 'MIT' :
-      licenseLink = `https://opensource.org/licenses/MIT`
+      licenseLink =  'https://opensource.org/licenses/MIT'
     break ;
 
     case 'ISC' :
-      licenseLink = `https://opensource.org/licenses/ISC`
+      licenseLink = 'https://opensource.org/licenses/ISC'
     break;
 
     case 'GNU' : 
-    licenseLink = `https://www.gnu.org/licenses/gpl-3.0.en.html`
+    licenseLink = 'https://www.gnu.org/licenses/gpl-3.0'
     break;
 
     case 'None':
@@ -66,7 +66,7 @@ const renderLicenseSection = (license) => {
 // fuction for read me page layout and take user input and add to the page
 function generateMarkdown(data) {
   return `# ${data.title}
-  [![License](${renderLicenseBadge(data.licenses)})](${renderLicenseLink(data.licenses)})
+  [![License](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
   ## Liscensing:
   ${renderLicenseBadge()}
