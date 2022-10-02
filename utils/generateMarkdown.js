@@ -64,8 +64,9 @@ const renderLicenseSection = (license) => {
 }
 
 // fuction for read me page layout and take user input and add to the page
-function generateMarkdown(data) {
-  return `# ${data.title}
+const generateMarkdown = (data) =>{
+  return `
+  # ${data.title}
   [![License](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
   ## Liscensing:
@@ -97,7 +98,6 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## Liscense:
-  ${data.license}
   [![License](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})    
   ${renderLicenseSection(data.license)}  
 

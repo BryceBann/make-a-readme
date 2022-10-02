@@ -136,15 +136,6 @@ const writeToFile = (data) => {
     })
 }
 
-// function to take user input and write it to the readme file
-// function init() {
-//     inquirer.prompt(questions)
-//     .then(function (userInput){
-//         console.log(userInput)
-//         writeToFile('SampleReadMe.md', generateMarkdown(userInput));
-//     });
-// };
-
 // Function call to initialize app
 const init = () => {
     return inquirer.prompt(questions)
