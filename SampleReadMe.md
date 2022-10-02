@@ -28,8 +28,8 @@
 
   ## Liscense:
   [![License](https://img.shields.io/badge/license-)]()    
-  The project is covered under the MIT. Click on the badge for more information  
+  The project is covered under the GNU. Click on the badge for more information  
 
   ##Additional Info:
-  - Github: df(https://github.com/df)
+  - Github: fd(https://github.com/fd)
   - Email: df
