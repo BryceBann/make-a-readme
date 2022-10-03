@@ -98,7 +98,7 @@ const generateMarkdown = (data) => {
   ${renderLicenseSection(data.license)}  
 
   ##Additional Info:
-  - Github: ${data.github}(https://github.com/${data.github})
+  - Github: [${data.github}](https://github.com/${data.github})
   - Email: ${data.email}
 `;
 }

@@ -1,5 +1,5 @@
 
-  # test
+  # lol
   [![License](https://img.shields.io/badge/license-)]()
 
   ## Table of contents
@@ -12,24 +12,24 @@
   - [Additional Info](#additional-info)
 
   ## Description:
-  test
+  hey
 
   ## Installation:
-  test
+  hi
 
   ## Usage:
-  test
+  whats up
 
   ## Contribution:
-  test
+  nope
 
   ## Testing:
-  test
+  nope
 
   ## Liscense:
   [![License](https://img.shields.io/badge/license-)]()    
   The project is covered under the MIT. Click on the badge for more information  
 
   ##Additional Info:
-  - Github: test(https://github.com/test)
-  - Email: test
+  - Github: [BryceBann](https://github.com/BryceBann)
+  - Email: punkrice@gmail.com
