@@ -1,5 +1,5 @@
 
-  # er
+  # readme generator
   [![License](https://img.shields.io/badge/license-)]()
 
   ## Table of contents
@@ -12,24 +12,24 @@
   - [Additional Info](#additional-info)
 
   ## Description:
-  er
+  makes a profesional readme
 
   ## Installation:
-  er
+  through npm install 
 
   ## Usage:
-  erer
+  through a comand line terminal
 
   ## Contribution:
-  er
+  reach out
 
   ## Testing:
-  er
+  none
 
   ## Liscense:
   [![License](https://img.shields.io/badge/license-)]()    
-  The project is covered under the MIT. Click on the badge for more information  
+  The project is covered under the ISC. Click on the badge for more information  
 
   ##Additional Info:
-  - Github: er(https://github.com/er)
-  - Email: er
+  - Github: BryceBann(https://github.com/BryceBann)
+  - Email: punkrice@gmail.com
