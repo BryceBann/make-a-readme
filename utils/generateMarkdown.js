@@ -3,26 +3,26 @@
 const renderLicenseBadge = (license) => {
   var licenseType = ""
 
-  switch(license) {
+  switch([0]) {
     case 'MIT' :
-      licenseType =  'MIT-blue.svg'
+      licenseType =  'MITLicense-blue'
       break;
 
       case 'ISC' :
-      licenseType =  'ISC-yellow.svg'
+      licenseType =  'ISC-yellow'
       break;
 
       case 'GNU' :
-      licenseType =  'GNU-yellow.svg'
+      licenseType =  'GNU-yellow'
       break;
 
       case 'noce' :
-        licenseType = 'none-res.svg'
+        licenseType = 'none-red'
         break;
 
     }
   
-  let badge = `https://img.shields.io/badge/license-${licenseType}`;  
+  let badge = `https://img.shields.io/badge/license-${license[0]}`;  
   return badge
 }
 
@@ -65,9 +65,10 @@ const renderLicenseSection = (license) => {
 
 // fuction for read me page layout and take user input and add to the page
 const generateMarkdown = (data) => {
+  console.log(data)
   return `
   # ${data.title}
-  [![License](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+  ![badge](${renderLicenseBadge(data.license)})
 
   ## Table of contents
   - [Description](#descrition)

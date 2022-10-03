@@ -1,6 +1,6 @@
 
-  # lol
-  [![License](https://img.shields.io/badge/license-)]()
+  # yo
+  ![badge](https://img.shields.io/badge/license-MIT)
 
   ## Table of contents
   - [Description](#descrition)
@@ -12,24 +12,24 @@
   - [Additional Info](#additional-info)
 
   ## Description:
-  hey
+  yo
 
   ## Installation:
-  hi
+  yo
 
   ## Usage:
-  whats up
+  yo
 
   ## Contribution:
-  nope
+  yo
 
   ## Testing:
-  nope
+  yo
 
   ## Liscense:
-  [![License](https://img.shields.io/badge/license-)]()    
+  [![License](https://img.shields.io/badge/license-MIT)]()    
   The project is covered under the MIT. Click on the badge for more information  
 
   ##Additional Info:
-  - Github: [BryceBann](https://github.com/BryceBann)
-  - Email: punkrice@gmail.com
+  - Github: [yo](https://github.com/yo)
+  - Email: yo
