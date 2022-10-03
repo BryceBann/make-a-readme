@@ -1,5 +1,5 @@
 
-  # readme generator
+  # test
   [![License](https://img.shields.io/badge/license-)]()
 
   ## Table of contents
@@ -12,24 +12,24 @@
   - [Additional Info](#additional-info)
 
   ## Description:
-  makes a profesional readme
+  test
 
   ## Installation:
-  through npm install 
+  test
 
   ## Usage:
-  through a comand line terminal
+  test
 
   ## Contribution:
-  reach out
+  test
 
   ## Testing:
-  none
+  test
 
   ## Liscense:
   [![License](https://img.shields.io/badge/license-)]()    
-  The project is covered under the ISC. Click on the badge for more information  
+  The project is covered under the MIT. Click on the badge for more information  
 
   ##Additional Info:
-  - Github: BryceBann(https://github.com/BryceBann)
-  - Email: punkrice@gmail.com
+  - Github: test(https://github.com/test)
+  - Email: test
