@@ -7,8 +7,6 @@
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Testing](#testing)
-  - [Liscensing](#liscensing)
-  - [Additional Info](#additional-info)
 
   ## Description:
  <p>This is a automatic README generator that will ask you multiple questions reagarding your project or application through a command line terminal. After the user inputs are putin then a markerdown file will generate adding in the users input. This will include a link to your Github as well as the licsenses.</p>
@@ -25,13 +23,8 @@
 
   ## Contribution:
   <p>If you would like to add anything please contact me</p>
-  - Github: https://github.com/BryceBann
+  - Github: https://github.com/BryceBann<br>
   - Email: punkrice@gmail.com
 
   ## Testing:
   none
-
-
-  ##Additional Info:
-  - Github: ${data.github}(https://github.com/${data.github})
-  - Email: ${data.email}
