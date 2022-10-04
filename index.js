@@ -7,7 +7,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'WHat is the title of your project',
+        message: 'What is the title of your project',
         validate: titleInput => {
             if(titleInput){
                 return true;
@@ -127,7 +127,7 @@ const questions = [
 
 // function to make the readme file 
 const writeToFile = (data) => {
-    fs.writeFile('sampleReadMe.md', data, (err) => {
+    fs.appendFile('sampleReadMe.md', data, (err) => {
         if (err){
             return console.log("Error ocurred")
         }else{

@@ -3,9 +3,9 @@
 const renderLicenseBadge = (license) => {
   var licenseType = ""
 
-  switch([0]) {
+  switch(license) {
     case 'MIT' :
-      licenseType =  'MITLicense-blue'
+      licenseType =  'MIT-blue'
       break;
 
       case 'ISC' :
@@ -22,7 +22,7 @@ const renderLicenseBadge = (license) => {
 
     }
   
-  let badge = `https://img.shields.io/badge/license-${license[0]}`;  
+  let badge = `https://img.shields.io/badge/license-${licenseType}`;  
   return badge
 }
 
@@ -68,7 +68,7 @@ const generateMarkdown = (data) => {
   console.log(data)
   return `
   # ${data.title}
-  ![badge](${renderLicenseBadge(data.license)})
+  [![badge](${renderLicenseBadge(data.license[0])})](${renderLicenseLink(data.license[0])})
 
   ## Table of contents
   - [Description](#descrition)
@@ -95,7 +95,7 @@ const generateMarkdown = (data) => {
   ${data.testing}
 
   ## Liscense:
-  [![License](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})    
+  [![License](${renderLicenseBadge(data.license[0])})](${renderLicenseLink(data.license[0])})    
   ${renderLicenseSection(data.license)}  
 
   ##Additional Info:
