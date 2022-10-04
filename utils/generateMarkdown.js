@@ -98,7 +98,7 @@ const generateMarkdown = (data) => {
   [![License](${renderLicenseBadge(data.license[0])})](${renderLicenseLink(data.license[0])})    
   ${renderLicenseSection(data.license)}  
 
-  ##Additional Info:
+  ## Additional Info:
   - Github: [${data.github}](https://github.com/${data.github})
   - Email: ${data.email}
 `;
