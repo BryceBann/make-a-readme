@@ -30,6 +30,6 @@
   [![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)    
   The project is covered under the MIT. Click on the badge for more information  
 
-  ##Additional Info:
+  ## Additional Info:
   - Github: [demo](https://github.com/demo)
   - Email: demo
